@@ -7,3 +7,8 @@
 	path = muk-it/muk_web
 	url = git@github.com:muk-it/muk_web.git
 	branch = 12.0
+
+[submodule "odoomates/odooapps"]
+	path = odoomates/odooapps
+	url = git@github.com:odoomates/odooapps.git
+	branch = 12.0
