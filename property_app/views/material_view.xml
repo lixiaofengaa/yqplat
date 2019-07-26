@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="view_form_property_material" model="ir.ui.view">
+            <field name="name">Material Form</field>
+            <field name="model">property.material</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="customer_id"/>
+                            <field name="name"/>
+                            <field name="brand"/>
+                            <field name="type"/>
+                            <field name="uint"/>
+                            <field name="price"/>
+                            <field name="count"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_material" model="ir.ui.view">
+            <field name="name">Material Tree</field>
+            <field name="model">property.material</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="customer_id"/>
+                    <field name="name"/>
+                    <field name="brand"/>
+                    <field name="type"/>
+                    <field name="uint"/>
+                    <field name="price"/>
+                    <field name="count"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_material_import" model="ir.ui.view">
+            <field name="name">Material Import Form</field>
+            <field name="model">property.material.import</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="date_import"/>
+                            <field name="supplier"/>
+                            <field name="materials"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_material_import" model="ir.ui.view">
+            <field name="name">Material Import Tree</field>
+            <field name="model">property.material.import</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="date_import"/>
+                    <field name="supplier"/>
+                    <field name="materials"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_material_supply" model="ir.ui.view">
+            <field name="name">Material Supply Form</field>
+            <field name="model">property.material.supply</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="supplier"/>
+                            <field name="address"/>
+                            <field name="phone"/>
+                            <field name="mail"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_material_supply" model="ir.ui.view">
+            <field name="name">Material Supply Tree</field>
+            <field name="model">property.material.supply</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="supplier"/>
+                    <field name="address"/>
+                    <field name="phone"/>
+                    <field name="mail"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_material_export" model="ir.ui.view">
+            <field name="name">Material Export Form</field>
+            <field name="model">property.material.export</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="date_export"/>
+                            <field name="department"/>
+                            <field name="materials"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_material_export" model="ir.ui.view">
+            <field name="name">Material Export Tree</field>
+            <field name="model">property.material.export</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="date_export"/>
+                    <field name="department"/>
+                    <field name="materials"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
