@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_space_user,SpaceUser,model_parking_space,parking_group_user,1,0,0,0
+access_space_manager,SpaceManager,model_parking_space,parking_group_manager,1,1,1,1
+access_charges_user,ChargesUser,model_parking_charges,parking_group_user,1,0,0,0
+access_charges_manager,ChargesManager,model_parking_charges,parking_group_manager,1,1,1,1
+access_spsmanage_user,SpsmanageUser,model_parking_spsmanage,parking_group_user,1,0,0,0
+access_spsmanage_manager,SpsmanageManager,model_parking_spsmanage,parking_group_manager,1,1,1,1
+access_car_user,CarUser,model_parking_car,parking_group_user,1,0,0,0
+access_car_manager,CarManager,model_parking_car,parking_group_manager,1,1,1,1
+access_handle_user,HandleUser,model_parking_handle,parking_group_user,1,0,0,0
+access_handle_manager,HandleManager,model_parking_handle,parking_group_manager,1,1,1,1
+access_temporary_user,TemporaryUser,model_parking_temporary,parking_group_user,1,0,0,0
+access_temporary_manager,TemporaryManager,model_parking_temporary,parking_group_manager,1,1,1,1

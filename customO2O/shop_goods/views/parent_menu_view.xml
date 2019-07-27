@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <!-- 此处添加下面的action和menu配置 -->
+    <menuitem
+            id="shop_goods_menu_fu"
+            name="商铺商品"
+    />
+    <act_window
+            id="shop_action"
+            name="商铺"
+            res_model="shop.view"
+            view_mode="tree,form"/>
+
+    <menuitem
+            id="shop_goods_shopmanage"
+            name="商铺管理"
+            action="shop_action"
+            parent="shop_goods_menu_fu"
+            sequence="5"/>
+
+    <!--        <menuitem-->
+    <!--            id="shop_goods_shopmanage1"-->
+    <!--            name="商铺"-->
+    <!--            action="shop_action"-->
+    <!--            parent="shop_goods_shopmanage"-->
+    <!--            sequence="1" />-->
+    <!--        <menuitem-->
+    <!--            id="shop_goods_shopmanage2"-->
+    <!--            name="店铺"-->
+    <!--            action="shop_action"-->
+    <!--            parent="shop_goods_shopmanage"-->
+    <!--            sequence="2" />-->
+
+    <menuitem
+            id="shop_goods_goodsmanage"
+            name="商品管理"
+            parent="shop_goods_menu_fu"
+            sequence="5"/>
+
+        <menuitem
+            id="shop_goods_goodsmanage11"
+            name="出售中"
+            action="shop_action"
+            parent="shop_goods_goodsmanage"
+            sequence="1"/>
+
+        <menuitem
+            id="shop_goods_goodsmanage12"
+            name="已售罄"
+            action="shop_action"
+            parent="shop_goods_goodsmanage"
+            sequence="2"/>
+
+        <menuitem
+            id="shop_goods_goodsmanage13"
+            name="仓库"
+            action="shop_action"
+            parent="shop_goods_goodsmanage"
+            sequence="3"/>
+
+        <menuitem
+            id="shop_goods_goodsmanage14"
+            name="回收站"
+            action="shop_action"
+            parent="shop_goods_goodsmanage"
+            sequence="4"/>
+
+        <menuitem
+            id="shop_goods_goodsmanage15"
+            name="待审核"
+            action="shop_action"
+            parent="shop_goods_goodsmanage"
+            sequence="5"/>
+
+    <menuitem
+            id="shop_goods_ordermanage"
+            name="订单管理"
+            action="shop_action"
+            parent="shop_goods_menu_fu"
+            sequence="5"/>
+
+        <menuitem
+            id="shop_goods_ordermanage1"
+            name="待付款"
+            action="shop_action"
+            parent="shop_goods_ordermanage"
+            sequence="1"/>
+
+        <menuitem
+            id="shop_goods_ordermanage2"
+            name="待发货"
+            action="shop_action"
+            parent="shop_goods_ordermanage"
+            sequence="2"/>
+
+        <menuitem
+            id="shop_goods_ordermanage3"
+            name="待收货"
+            action="shop_action"
+            parent="shop_goods_ordermanage"
+            sequence="3"/>
+
+        <menuitem
+            id="shop_goods_ordermanage4"
+            name="已完成"
+            action="shop_action"
+            parent="shop_goods_ordermanage"
+            sequence="4"/>
+
+        <menuitem
+            id="shop_goods_ordermanage5"
+            name="已关闭"
+            action="shop_action"
+            parent="shop_goods_ordermanage"
+            sequence="5"/>
+
+        <menuitem
+            id="shop_goods_ordermanage6"
+            name="全部订单"
+            action="shop_action"
+            parent="shop_goods_ordermanage"
+            sequence="6"/>
+
+
+    <menuitem
+            id="shop_goods_datamanage"
+            name="基础数据"
+            parent="shop_goods_menu_fu"
+            sequence="5"/>
+
+        <menuitem
+            id="shop_goods_datamanage1"
+            name="商铺类别"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="1"/>
+
+        <menuitem
+            id="shop_goods_datamanage2"
+            name="商铺类型"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="2"/>
+
+        <menuitem
+            id="shop_goods_datamanage3"
+            name="商品分类"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="3"/>
+
+        <menuitem
+            id="shop_goods_datamanage4"
+            name="物流方式"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="4"/>
+
+        <menuitem
+            id="shop_goods_datamanage5"
+            name="订单状态"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="5"/>
+
+        <menuitem
+            id="shop_goods_datamanage6"
+            name="物流方式"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="6"/>
+
+
+
+</openerp>
