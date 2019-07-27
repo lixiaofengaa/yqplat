@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_user" name="人员管理"/>
+
+    <act_window id="action_user_set"
+                name="入驻商管理" res_model="user.set.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_user_set"  name="入驻商管理"  parent="menu_user"
+              action="action_user_set"/>
+
+
+    <act_window id="action_user_consumer"
+                name="用户管理" res_model="user.consumer.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_user_consumer"  name="用户管理"  parent="menu_user"
+              action="action_user_consumer"/>
+
+
+    <act_window id="action_user_member"
+                name="会员管理" res_model="user.member.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_user_member"  name="会员管理"  parent="menu_user"
+              action="action_user_member"/>
+
+</odoo>
