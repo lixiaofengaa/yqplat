@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_inspection" model="ir.ui.view">
+        <field name="name">Inspection Form</field>
+        <field name="model">clean.inspection</field>
+        <field name="arch" type="xml">
+            <form string="Inspection">
+                <header>
+                    <!-- 此处添加按钮 -->
+<!--                    <button name="button_check_isbn" type="object" string="按钮" />-->
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="date_published" />
+                        <field name="state" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_inspection" model="ir.ui.view">
+        <field name="name">Inspection List</field>
+        <field name="model">clean.inspection</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="date_published" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

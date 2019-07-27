@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- 车位管理主菜单 -->
+    <menuitem id="menu_parking" name="车位管理" />
+
+    <!-- 车位管理子菜单 -->
+    <menuitem id="menu_parking_space"
+        name="车位管理"
+        parent="menu_parking"
+    />
+
+            <!-- 车位档案动作 -->
+            <act_window id="action_parking_space_space"
+                name="Parking Apace Apace"
+                res_model="parking.space"
+                view_mode="tree,form"
+            />
+            <!-- 车位档案 -->
+            <menuitem id="menu_parking_space_space"
+                name="车位档案"
+                parent="menu_parking_space"
+                action="action_parking_space_space"
+            />
+
+            <!-- 车位状态查询动作 -->
+            <act_window id="action_parking_stasel"
+                name="Parking Stasel"
+                res_model="parking.space"
+                view_mode="tree,form"
+            />
+            <!-- 车位状态查询 -->
+            <menuitem id="menu_parking_stasel"
+                name="车位状态查询"
+                parent="menu_parking_space"
+                action="action_parking_stasel"
+            />
+
+    <!-- 收费标准菜单动作 -->
+    <act_window id="action_parking_charges"
+        name="Parking Charges"
+        res_model="parking.charges"
+        view_mode="tree,form"
+    />
+    <!-- 收费标准菜单 -->
+    <menuitem id="menu_parking_charges"
+        name="收费标准"
+        parent="menu_parking"
+        action="action_parking_charges"
+    />
+
+    <!-- 已售车位菜单动作 -->
+    <act_window id="action_parking_spsmanage"
+        name="Parking Spsmanage"
+        res_model="parking.spsmanage"
+        view_mode="tree,form"
+    />
+    <!-- 已售车位菜单 -->
+    <menuitem id="menu_parking_spsmanage"
+        name="已售车位"
+        parent="menu_parking"
+        action="action_parking_spsmanage"
+    />
+
+    <!-- 车位租赁菜单 -->
+    <menuitem id="menu_parking_lease"
+        name="车位租赁"
+        parent="menu_parking"
+    />
+
+            <act_window id="action_parking_lease_car"
+                name="Parking Lease Car"
+                res_model="parking.car"
+                view_mode="tree,form"
+            />
+            <!-- 车辆档案菜单 -->
+            <menuitem id="menu_parking_lease_car"
+                name="车辆档案"
+                parent="menu_parking_lease"
+                action="action_parking_lease_car"
+            />
+
+            <act_window id="action_parking_lease_handle"
+                name="Parking Lease Handle"
+                res_model="parking.handle"
+                view_mode="tree,form"
+            />
+            <!-- 租赁办理菜单 -->
+            <menuitem id="menu_parking_lease_handle"
+                name="租赁办理"
+                parent="menu_parking_lease"
+                action="action_parking_lease_handle"
+            />
+
+    <act_window id="action_parking_lease_stopcar"
+                name="Parking Lease Stopcar"
+                res_model="parking.handle"
+                view_mode="tree,form"
+            />
+            <!-- 停车记录查询 -->
+            <menuitem id="menu_parking_lease_stopcar"
+                name="停车记录查询"
+                parent="menu_parking_lease"
+                action="action_parking_lease_stopcar"
+            />
+
+    <act_window id="action_parking_lease_discount"
+                name="Parking Lease Discount"
+                res_model="parking.handle"
+                view_mode="tree,form"
+            />
+            <!-- 折扣记录查询 -->
+            <menuitem id="menu_parking_lease_discount"
+                name="折扣记录查询"
+                parent="menu_parking_lease"
+                action="action_parking_lease_discount"
+            />
+
+    <act_window id="action_parking_lease_pstop"
+                name="Parking Lease Pstop"
+                res_model="parking.handle"
+                view_mode="tree,form"
+            />
+            <!-- 已售车位菜单 -->
+            <menuitem id="menu_parking_lease_pstop"
+                name="报停记录查询"
+                parent="menu_parking_lease"
+                action="action_parking_lease_pstop"
+            />
+
+    <act_window id="action_parking_lease_expire"
+                name="Parking Lease Expire"
+                res_model="parking.handle"
+                view_mode="tree,form"
+            />
+            <!-- 已售车位菜单 -->
+            <menuitem id="menu_parking_lease_expire"
+                name="到期提醒"
+                parent="menu_parking_lease"
+                action="action_parking_lease_expire"
+            />
+
+    <act_window id="action_parking_lease_rcon"
+                name="Parking Lease Rcon"
+                res_model="parking.handle"
+                view_mode="tree,form"
+            />
+            <!-- 已售车位菜单 -->
+            <menuitem id="menu_parking_lease_rcon"
+                name="租控管理"
+                parent="menu_parking_lease"
+                action="action_parking_lease_rcon"
+            />
+
+    <!-- 临时停车收费菜单动作 -->
+    <act_window id="action_parking_temporary"
+        name="Parking Temporary"
+        res_model="parking.temporary"
+        view_mode="tree,form"
+    />
+    <!-- 临时停车收费菜单 -->
+    <menuitem id="menu_parking_temporary"
+        name="临停收费入账"
+        parent="menu_parking"
+        action="action_parking_temporary"
+    />
+</odoo>

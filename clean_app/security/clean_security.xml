@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="module_clean_category" model="ir.module.category">
+        <field name="name">clean</field>
+    </record>
+
+    <!-- clean User Group -->
+    <record id="clean_group_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="module_clean_category" />
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+    </record>
+
+    <!-- clean Manager Group -->
+    <record id="clean_group_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="module_clean_category" />
+        <field name="implied_ids" eval="[(4, ref('clean_group_user'))]" />
+        <field name="users" eval="[
+                    (4, ref('base.user_root')),
+                    (4, ref('base.user_admin'))
+                ]" />
+    </record>
+</odoo>
