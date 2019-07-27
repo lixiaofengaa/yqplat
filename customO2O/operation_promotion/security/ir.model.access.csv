@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_advert_user,AdvertUser,model_business_advert_view,business_group_user,1,0,0,0
-access_advert_manager,AdvertManager,model_business_advert_view,business_group_manager,1,1,1,1
-access_opera_user,OperaUser,model_business_opera_view,business_group_user,1,0,0,0
-access_opera_manager,OperaManager,model_business_opera_view,business_group_manager,1,1,1,1
-access_move_user,MoveUser,model_business_move_view,business_group_user,1,0,0,0
-access_move_manager,MoveManager,model_business_move_view,business_group_manager,1,1,1,1
