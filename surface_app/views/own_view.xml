@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_own" model="ir.ui.view">
+        <field name="name">Own Form</field>
+        <field name="model">surface.own</field>
+        <field name="arch" type="xml">
+            <form string="Own">
+                <header>
+                    <!-- 此处添加按钮 -->
+<!--                    <button name="button_check_isbn" type="object" string="统计车位数量" />-->
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="num" />
+                        <field name="start" />
+                        <field name="magn" />
+                        <field name="date_stime" />
+                        <field name="range" />
+                        <field name="house" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_own" model="ir.ui.view">
+        <field name="name">Own List</field>
+        <field name="model">surface.own</field>
+        <field name="arch" type="xml">
+<!--            <button name="action_confirm_all_sale_ordesar" string="确认" type="action" />-->
+            <tree>
+                <field name="name" />
+                <field name="num" />
+                <field name="start" />
+                <field name="magn" />
+                <field name="date_stime" />
+                <field name="range" />
+                <field name="house" />
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_form_record" model="ir.ui.view">
+        <field name="name">Record Form</field>
+        <field name="model">surface.record</field>
+        <field name="arch" type="xml">
+            <form string="Record">
+                <header>
+                    <!-- 此处添加按钮 -->
+<!--                    <button name="button_check_isbn" type="object" string="统计车位数量" />-->
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="date_time" />
+                        <field name="numon" />
+                        <field name="num" />
+                        <field name="cost" />
+                        <field name="balance" />
+                        <field name="total" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_record" model="ir.ui.view">
+        <field name="name">Record List</field>
+        <field name="model">surface.record</field>
+        <field name="arch" type="xml">
+<!--            <button name="action_confirm_all_sale_ordesar" string="确认" type="action" />-->
+            <tree>
+                <field name="name" />
+                <field name="date_time" />
+                <field name="numon" />
+                <field name="num" />
+                <field name="cost" />
+                <field name="balance" />
+                <field name="total" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>
