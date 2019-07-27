@@ -1,9 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_area_user,AreaUser,model_clean_area,clean_group_user,1,0,0,0
-access_area_manager,AreaManager,model_clean_area,clean_group_manager,1,1,1,1
-access_record_user,RecordUser,model_clean_record,clean_group_user,1,0,0,0
-access_record_manager,RecordManager,model_clean_record,clean_group_manager,1,1,1,1
-access_inspection_user,InspectionUser,model_clean_inspection,clean_group_user,1,0,0,0
-access_inspection_manager,InspectionManager,model_clean_inspection,clean_group_manager,1,1,1,1
-access_tool_user,ToolUser,model_clean_tool,clean_group_user,1,0,0,0
-access_tool_manager,ToolManager,model_clean_tool,clean_group_manager,1,1,1,1
