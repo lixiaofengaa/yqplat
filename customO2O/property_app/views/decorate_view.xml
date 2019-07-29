@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="view_form_property_decorate_register" model="ir.ui.view">
+            <field name="name">Decorate Register Form</field>
+            <field name="model">property.decorate.register</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="applicant"/>
+                            <field name="phone"/>
+                            <field name="description"/>
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                            <field name="house"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_decorate_register" model="ir.ui.view">
+            <field name="name">Decorate Register Tree</field>
+            <field name="model">property.decorate.register</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="applicant"/>
+                    <field name="phone"/>
+                    <field name="description"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="house"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_decorate_handle" model="ir.ui.view">
+            <field name="name">Decorate Handle Form</field>
+            <field name="model">property.decorate.handle</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="phone"/>
+                            <field name="register_ids"/>
+                            <field name="material_ids"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_decorate_handle" model="ir.ui.view">
+            <field name="name">Decorate Handle Tree</field>
+            <field name="model">property.decorate.handle</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="phone"/>
+                    <field name="register_ids"/>
+                    <field name="material_ids"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_decorate_check" model="ir.ui.view">
+            <field name="name">Decorate Check Form</field>
+            <field name="model">property.decorate.check</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="applicant"/>
+                            <field name="information"/>
+                            <field name="decorator"/>
+                            <field name="evaluate"/>
+                            <field name="suggesstion"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_decorate_check" model="ir.ui.view">
+            <field name="name">Decorate Check Tree</field>
+            <field name="model">property.decorate.check</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="applicant"/>
+                    <field name="information"/>
+                    <field name="decorator"/>
+                    <field name="evaluate"/>
+                    <field name="suggesstion"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_decorate_pay" model="ir.ui.view">
+            <field name="name">Decorate Pay Form</field>
+            <field name="model">property.decorate.pay</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="applicant"/>
+                            <field name="money"/>
+                            <field name="pay_way"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_decorate_pay" model="ir.ui.view">
+            <field name="name">Decorate Pay Tree</field>
+            <field name="model">property.decorate.pay</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="applicant"/>
+                    <field name="money"/>
+                    <field name="pay_way"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

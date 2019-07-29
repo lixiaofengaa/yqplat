@@ -1,0 +1,26 @@
+{
+    'name': "物业管理",
+    'version': '12.0.1.0',
+    'license': 'LGPL-3',
+    'depends': ['base', 'hr', 'mail'],
+    'author': "YuQi",
+    'website': 'http://www.baoshunchem.com/',
+    'description': """物业管理""",
+    'category': 'wanguo',
+    'data': [
+        'security/resource_security.xml',
+        'security/ir.model.access.csv',
+        'views/property_menu.xml',
+        'views/base_view.xml',
+        'views/charge_view.xml',
+        'views/contract_view.xml',
+        'views/material_view.xml',
+        'views/maintain_view.xml',
+        'views/decorate_view.xml',
+    ],
+    'demo': [
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
