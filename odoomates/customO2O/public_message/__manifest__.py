@@ -5,7 +5,6 @@
     'summary':"对全体用户公告通知或新闻、文章推送",
     'license': 'LGPL-3',
     'category': '万国',
-    'sequence':0,
     'depends': ['base'],
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',

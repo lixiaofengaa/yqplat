@@ -5,7 +5,6 @@
     'summary': "对入收银、财务、充值、支付进行全方位实施有效率管理",
     'license': 'LGPL-3',
     'category': '万国',
-    'sequence': 0,
     'depends': ['base'],
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',

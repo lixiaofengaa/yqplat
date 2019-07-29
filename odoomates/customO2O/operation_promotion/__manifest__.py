@@ -5,7 +5,6 @@
     'summary': "对广告、运营、营销活动进行全方位实施有效率管理",
     'license': 'LGPL-3',
     'category': '万国',
-    'sequence': 0,
     'depends': ['base'],
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',
