@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_business" name="运营推广"/>
+
+    <act_window id="action_business_advert"
+                name="广告管理" res_model="business.advert.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_business_advert"  name="广告管理"  parent="menu_business"
+              action="action_business_advert"/>
+
+
+    <act_window id="action_business_opera"
+                name="运营管理" res_model="business.opera.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_business_opera"  name="运营管理"  parent="menu_business"
+              action="action_business_opera"/>
+
+
+    <act_window id="action_business_move"
+                name="营销活动管理" res_model="business.move.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_business_move"  name="营销活动管理"  parent="menu_business"
+              action="action_business_move"/>
+
+
+
+</odoo>
