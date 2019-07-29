@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="menu_property" name="物业管理平台"/>
+    <!--基础资料-->
+    <menuitem id="menu_property_base_manager" name="基础资料" sequence="1"  parent="menu_property" groups="property_group_user"/>
+        <!--客户管理-->
+        <act_window id="action_property_customer" name="客户列表" res_model="property.customer" view_mode="tree,form"/>
+        <menuitem id="menu_property_customer" name="户主管理" parent="menu_property_base_manager" sequence="0" action="action_property_customer"/>
+        <!--房产管理-->
+        <act_window id="action_property_estate" name="房产列表" res_model="property.estate" view_mode="tree,form"/>
+        <menuitem id="menu_property_estate" name="房产管理" parent="menu_property_base_manager" sequence="1" action="action_property_estate"/>
+        <act_window id="action_property_estate_resource" name="房产资源列表" res_model="property.estate" view_mode="tree,form"/>
+        <menuitem id="menu_property_estate_resource" name="房产资源管理" parent="menu_property_base_manager" sequence="2" action="action_property_estate_resource"/>
+        <!--部门管理-->
+        <act_window id="action_property_department" name="部门列表" res_model="hr.department" view_mode="tree,form"/>
+        <menuitem id="menu_property_department" name="部门管理" parent="menu_property_base_manager" sequence="4" action="action_property_department"/>
+        <!--员工管理-->
+        <act_window id="action_property_employee" name="员工列表" res_model="hr.employee" view_mode="tree,form"/>
+        <menuitem id="menu_property_employee" name="员工管理" parent="menu_property_base_manager" sequence="5" action="action_property_employee"/>
+        <!--物料类型管理-->
+        <act_window id="action_property_material_detail_list" name="物料类型列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_material_detail_list" name="物料分类明细" parent="menu_property_base_manager" sequence="6" action="action_property_material_detail_list"/>
+        <!--收费类型-->
+        <act_window id="action_property_charge_base" name="类型明细" res_model="property.charge" view_mode="tree,form"/>
+        <menuitem id="menu_property_charge_base" name="收费类型管理" parent="menu_property_base_manager" sequence="7" action="action_property_charge_base" />
+    <!--收费管理-->
+    <menuitem id="menu_property_charge_manager" name="收费管理" sequence="2" parent="menu_property" groups="property_group_user" />
+        <!--账单管理-->
+        <act_window id="action_property_charge_pay" name="账单列表" res_model="property.charge.pay" view_mode="tree,form"/>
+        <menuitem id="menu_property_charge_pay" name="账单管理" parent="menu_property_charge_manager" sequence="2" action="action_property_charge_pay" />
+        <!--缴费管理-->
+        <act_window id="action_property_charge_payment" name="缴费列表" res_model="property.charge.payment" view_mode="tree,form"/>
+        <menuitem id="menu_property_charge_payment" name="缴费管理" parent="menu_property_charge_manager" sequence="4" action="action_property_charge_payment" />
+        <!--欠费管理-->
+        <act_window id="action_property_charge_debt" name="欠费账单" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_charge_debt" name="欠费管理" parent="menu_property_charge_manager" sequence="5" action="action_property_charge_debt" />
+        <!--预交费用管理-->
+        <act_window id="action_property_charge_pre" name="账单列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_charge_pre" name="预交费用" parent="menu_property_charge_manager" sequence="4" action="action_property_charge_pre" />
+        <!--退款管理-->
+        <act_window id="action_property_charge_quit" name="退款列表" res_model="property.charge.quit" view_mode="tree,form"/>
+        <menuitem id="menu_property_charge_quit" name="退款管理" parent="menu_property_charge_manager" sequence="6" action="action_property_charge_quit" />
+        <!--财务报表-->
+    <!--租赁管理-->
+    <menuitem id="menu_property_lease_manager" name="租赁管理" sequence="3" parent="menu_property" groups="property_group_user" />
+        <!--合同管理-->
+        <act_window id="action_property_lease_contract" name="合同列表" res_model="property.contract" view_mode="tree,form"/>
+        <menuitem id="menu_property_lease_contract" name="合同管理" parent="menu_property_lease_manager" sequence="3" action="action_property_lease_contract" />
+        <!--租金管理-->
+        <act_window id="action_property_lease_rent" name="账单列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_lease_rent" name="租金管理" parent="menu_property_lease_manager" sequence="2" action="action_property_lease_rent" />
+        <!--租户管理-->
+        <act_window id="action_property_lease_lessee" name="租户列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_lease_lessee" name="租户管理" parent="menu_property_lease_manager" sequence="0" action="action_property_lease_lessee" />
+        <act_window id="action_property_lease_lessee_resource" name="资源列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_lease_lessee_resource" name="租户资源管理" parent="menu_property_lease_manager" sequence="1" action="action_property_lease_lessee_resource" />
+        <!--租控管理-->
+        <act_window id="action_property_lease_ctrl" name="租控明细" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_lease_ctrl" name="租控管理" parent="menu_property_lease_manager" sequence="4" action="action_property_lease_ctrl" />
+        <!--委托管理-->
+        <act_window id="action_property_lease_proxy" name="委托合同" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_lease_proxy" name="委托管理" parent="menu_property_lease_manager" sequence="5" action="action_property_lease_proxy" />
+        <!--代收管理-->
+        <act_window id="action_property_lease_collection" name="代收货款" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_lease_collection" name="代收服务" parent="menu_property_lease_manager" sequence="6" action="action_property_lease_collection" />
+    <!--物料管理-->
+    <menuitem id="menu_property_material_manager" name="物料管理" sequence="4" parent="menu_property" groups="property_group_user" />
+        <act_window id="action_property_material" name="物料列表" res_model="property.material" view_mode="tree,form"/>
+        <menuitem id="menu_property_material" name="物料清单记录" parent="menu_property_material_manager" action="action_property_material" />
+        <act_window id="action_property_material_supply" name="供应商" res_model="property.material.supply" view_mode="tree,form"/>
+        <menuitem id="menu_property_material_supply" name="供应商管理" parent="menu_property_material_manager" action="action_property_material_supply" />
+        <act_window id="action_property_material_import" name="入库账单" res_model="property.material.import" view_mode="tree,form"/>
+        <menuitem id="menu_property_material_import" name="入库管理" parent="menu_property_material_manager" action="action_property_material_import" />
+        <act_window id="action_property_material_export" name="出库账单" res_model="property.material.export" view_mode="tree,form"/>
+        <menuitem id="menu_property_material_export" name="出库管理" parent="menu_property_material_manager" action="action_property_material_export" />
+        <act_window id="action_property_material_export_maintain" name="领料记录" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_material_export_maintain" name="维修领料" parent="menu_property_material_manager" action="action_property_material_export_maintain" />
+        <act_window id="action_property_material_query" name="查询记录" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_material_query" name="库存查询" parent="menu_property_material_manager" action="action_property_material_query" />
+        <act_window id="action_property_material_check" name="盘点记录" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_material_check" name="库存盘点" parent="menu_property_material_manager" action="action_property_material_check" />
+    <!--维修管理-->
+    <menuitem id="menu_property_maintain_manager" name="维修管理" sequence="5" parent="menu_property" groups="property_group_user" />
+        <!--维修申请-->
+        <act_window id="action_property_maintain" name="申请列表" res_model="property.maintain" view_mode="tree,form"/>
+        <menuitem id="menu_property_maintain" name="申请记录" parent="menu_property_maintain_manager" sequence="1" action="action_property_maintain" />
+        <!--维修受理-->
+        <act_window id="action_property_maintain_handle" name="受理列表" res_model="property.maintain.handle" view_mode="tree,form"/>
+        <menuitem id="menu_property_maintain_handle" name="待受理记录" parent="menu_property_maintain_manager" sequence="2" action="action_property_maintain_handle" />
+        <!--维修验收-->
+        <act_window id="action_property_maintain_check" name="验收列表" res_model="property.maintain.check" view_mode="tree,form"/>
+        <menuitem id="menu_property_maintain_check" name="待验收记录" parent="menu_property_maintain_manager" sequence="3" action="action_property_maintain_check" />
+        <!--装修收费-->
+        <act_window id="action_property_maintain_pay" name="收费列表" res_model="property.maintain.pay" view_mode="tree,form"/>
+        <menuitem id="menu_property_maintain_pay" name="待收费记录" parent="menu_property_maintain_manager" sequence="4" action="action_property_maintain_pay" />
+    <!--装修管理-->
+    <menuitem id="menu_property_decorate_manager" name="装修管理" sequence="6" parent="menu_property" groups="property_group_user"/>
+        <!--装修登记-->
+        <act_window id="action_property_decorate_register" name="登记列表" res_model="property.decorate.register" view_mode="tree,form"/>
+        <menuitem id="menu_property_decorate_register" name="登记记录" parent="menu_property_decorate_manager" sequence="1" action="action_property_decorate_register" />
+        <!--登记受理-->
+        <act_window id="action_property_decorate_handle" name="受理列表" res_model="property.decorate.handle" view_mode="tree,form"/>
+        <menuitem id="menu_property_decorate_handle" name="待受理记录" parent="menu_property_decorate_manager" sequence="2" action="action_property_decorate_handle" />
+        <!--装修验收-->
+        <act_window id="action_property_decorate_check" name="验收列表" res_model="property.decorate.check" view_mode="tree,form"/>
+        <menuitem id="menu_property_decorate_check" name="待验收记录" parent="menu_property_decorate_manager" sequence="3" action="action_property_decorate_check" />
+        <!--装修收费-->
+        <act_window id="action_property_decorate_pay" name="收费列表" res_model="property.decorate.pay" view_mode="tree,form"/>
+        <menuitem id="menu_property_decorate_pay" name="待收费记录" parent="menu_property_decorate_manager" sequence="4" action="action_property_decorate_pay" />
+    <!--投诉建议-->
+    <menuitem id="menu_property_suggest_manager" name="投诉建议" sequence="7" parent="menu_property" groups="property_group_user"/>
+        <!--投诉记录-->
+        <act_window id="action_property_suggest_record" name="投诉列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_suggest_record" name="投诉记录" parent="menu_property_suggest_manager" sequence="1" action="action_property_suggest_record" />
+        <!--受理记录-->
+        <act_window id="action_property_suggest_handle" name="受理列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_suggest_handle" name="待处理记录" parent="menu_property_suggest_manager" sequence="2" action="action_property_suggest_handle" />
+        <!--回访记录-->
+        <act_window id="action_property_suggest_visit" name="记录列表" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_property_suggest_visit" name="回访记录" parent="menu_property_suggest_manager" sequence="3" action="action_property_suggest_visit" />
+    <!--设备管理-->
+    <menuitem id="menu_property_equipment_management" name="设备管理" parent="menu_property"/>
+        <act_window id="action_equipment_doc" name="设备档案" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_equipment_doc" name="设备档案" parent="menu_property_equipment_management" action="action_equipment_doc"/>
+        <act_window id="action_equipment_unit" name="维保单位" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_equipment_unit" name="维保单位" parent="menu_property_equipment_management" action="action_equipment_unit"/>
+        <act_window id="action_equipment_record" name="保养记录" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_equipment_record" name="保养记录" parent="menu_property_equipment_management" action="action_equipment_record"/>
+        <act_window id="action_equipment_maintain" name="维修记录" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_equipment_maintain" name="维修记录" parent="menu_property_equipment_management" action="action_equipment_maintain"/>
+        <act_window id="action_equipment_check" name="设备巡检" res_model="property.charge.debt" view_mode="tree,form"/>
+        <menuitem id="menu_equipment_check" name="设备巡检" parent="menu_property_equipment_management" action="action_equipment_check"/>
+</odoo>

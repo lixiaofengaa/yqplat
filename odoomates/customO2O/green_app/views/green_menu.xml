@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Green App Menu -->
+    <menuitem id="menu_green" name="绿化管理" />
+
+<!--    &lt;!&ndash; 绿化管理子菜单 &ndash;&gt;-->
+<!--    <menuitem id="menu_green_manage"-->
+<!--        name="绿化管理"-->
+<!--        parent="menu_green"-->
+<!--    />-->
+
+<!--            &lt;!&ndash; 植被管理了动作 &ndash;&gt;-->
+<!--            <act_window id="action_green_manage_botany"-->
+<!--                name="Green Manage Botany"-->
+<!--                res_model="green.botany"-->
+<!--                view_mode="tree,form"-->
+<!--            />-->
+<!--            &lt;!&ndash; 植被管理 &ndash;&gt;-->
+<!--            <menuitem id="menu_green_manage_botany"-->
+<!--                name="植被管理"-->
+<!--                parent="menu_green_manage"-->
+<!--                action="action_green_manage_botany"-->
+<!--            />-->
+
+<!--    &lt;!&ndash; 绿化区域动作 &ndash;&gt;-->
+<!--            <act_window id="action_green_manage_area"-->
+<!--                name="Green Manage Area"-->
+<!--                res_model="green.botany"-->
+<!--                view_mode="tree,form"-->
+<!--            />-->
+<!--            &lt;!&ndash; 绿化区域 &ndash;&gt;-->
+<!--            <menuitem id="menu_green_manage_area"-->
+<!--                name="绿化区域"-->
+<!--                parent="menu_green_manage"-->
+<!--                action="action_green_manage_area"-->
+<!--            />-->
+
+<!--    &lt;!&ndash; 绿化事件动作 &ndash;&gt;-->
+<!--            <act_window id="action_green_manage_thing"-->
+<!--                name="Green Manage Thing"-->
+<!--                res_model="green.botany"-->
+<!--                view_mode="tree,form"-->
+<!--            />-->
+<!--            &lt;!&ndash; 绿化事件 &ndash;&gt;-->
+<!--            <menuitem id="menu_green_manage_thing"-->
+<!--                name="绿化事件"-->
+<!--                parent="menu_green_manage"-->
+<!--                action="action_green_manage_thing"-->
+<!--            />-->
+
+<!--    &lt;!&ndash; 植被管理了动作 &ndash;&gt;-->
+<!--            <act_window id="action_green_manage_Pandi"-->
+<!--                name="Green Manage pandi"-->
+<!--                res_model="green.botany"-->
+<!--                view_mode="tree,form"-->
+<!--            />-->
+<!--            &lt;!&ndash; 植被管理 &ndash;&gt;-->
+<!--            <menuitem id="menu_green_manage_pandi"-->
+<!--                name="计划与检查"-->
+<!--                parent="menu_green_manage"-->
+<!--                action="action_green_manage_pandi"-->
+<!--            />-->
+
+
+            <act_window id="action_green_manage_botany"
+                name="植被管理"
+                res_model="green.botany"
+                view_mode="tree,form"
+            />
+            <!-- 植被管理 -->
+            <menuitem id="menu_green_manage_botany"
+                name="植被管理"
+                parent="menu_green"
+                action="action_green_manage_botany"
+            />
+
+    <!-- 绿化区域动作 -->
+            <act_window id="action_green_manage_area"
+                name="绿化区域"
+                res_model="green.botany"
+                view_mode="tree,form"
+            />
+            <!-- 绿化区域 -->
+            <menuitem id="menu_green_manage_area"
+                name="绿化区域"
+                parent="menu_green"
+                action="action_green_manage_area"
+            />
+
+    <!-- 绿化事件动作 -->
+            <act_window id="action_green_manage_thing"
+                name="绿化事件"
+                res_model="green.botany"
+                view_mode="tree,form"
+            />
+            <!-- 绿化事件 -->
+            <menuitem id="menu_green_manage_thing"
+                name="绿化事件"
+                parent="menu_green"
+                action="action_green_manage_thing"
+            />
+
+    <!-- 植被管理 -->
+    <menuitem id="menu_green_manage_pandi"
+        name="计划与检查"
+        parent="menu_green"
+    />
+
+
+            <!-- 计划动作 -->
+            <act_window id="action_green_manage_pandi_plan"
+                name="绿化计划"
+                res_model="green.botany"
+                view_mode="tree,form"
+            />
+            <!-- 计划 -->
+            <menuitem id="menu_green_manage_pandi_plan"
+                name="计划"
+                parent="menu_green_manage_pandi"
+                action="action_green_manage_pandi_plan"
+            />
+
+            <!-- 记录动作 -->
+            <act_window id="action_green_manage_pandi_record"
+                name="绿化记录"
+                res_model="green.botany"
+                view_mode="tree,form"
+            />
+            <!-- 记录 -->
+            <menuitem id="menu_green_manage_pandi_record"
+                name="记录"
+                parent="menu_green_manage_pandi"
+                action="action_green_manage_pandi_record"
+            />
+
+            <!-- 检查动作 -->
+            <act_window id="action_green_manage_pandi_inspect"
+                name="绿化检查"
+                res_model="green.botany"
+                view_mode="tree,form"
+            />
+            <!-- 记录 -->
+            <menuitem id="menu_green_manage_pandi_inspect"
+                name="检查"
+                parent="menu_green_manage_pandi"
+                action="action_green_manage_pandi_inspect"
+            />
+
+
+
+</odoo>
