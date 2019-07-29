@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_form_property_maintain" model="ir.ui.view">
+            <field name="name">Maintain Form</field>
+            <field name="model">property.maintain</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="house"/>
+                            <field name="building"/>
+                            <field name="home"/>
+                            <field name="applicant"/>
+                            <field name="phone"/>
+                            <field name="description"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_maintain" model="ir.ui.view">
+            <field name="name">Maintain Tree</field>
+            <field name="model">property.maintain</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="house"/>
+                    <field name="building"/>
+                    <field name="home"/>
+                    <field name="applicant"/>
+                    <field name="phone"/>
+                    <field name="description"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+                <record id="view_form_property_maintain_handle" model="ir.ui.view">
+            <field name="name">Maintain Handle Form</field>
+            <field name="model">property.maintain.handle</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="phone"/>
+                            <field name="register_ids"/>
+                            <field name="material_ids"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_maintain_handle" model="ir.ui.view">
+            <field name="name">Maintain Handle Tree</field>
+            <field name="model">property.maintain.handle</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="phone"/>
+                    <field name="register_ids"/>
+                    <field name="material_ids"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_maintain_check" model="ir.ui.view">
+            <field name="name">Maintain Check Form</field>
+            <field name="model">property.maintain.check</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="applicant"/>
+                            <field name="information"/>
+                            <field name="decorator"/>
+                            <field name="evaluate"/>
+                            <field name="suggesstion"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_maintain_check" model="ir.ui.view">
+            <field name="name">Maintain Check Tree</field>
+            <field name="model">property.maintain.check</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="applicant"/>
+                    <field name="information"/>
+                    <field name="decorator"/>
+                    <field name="evaluate"/>
+                    <field name="suggesstion"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_form_property_maintain_pay" model="ir.ui.view">
+                <field name="name">Maintain Pay Form</field>
+            <field name="model">property.maintain.pay</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="applicant"/>
+                            <field name="money"/>
+                            <field name="pay_way"/>
+                        </group>
+                    </sheet>
+                    <chatter>
+                        <div class="oe_chatter">
+                            <field name="message_follower_ids" widget="mail_followers"/>
+                            <field name="activity_ids" widget="mail_activity"/>
+                            <field name="message_ids" widget="mail_thread"/>
+                        </div>
+                    </chatter>
+                </form>
+            </field>
+        </record>
+        <record id="view_tree_property_maintain_pay" model="ir.ui.view">
+            <field name="name">Maintain Pay Tree</field>
+            <field name="model">property.maintain.pay</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="applicant"/>
+                    <field name="money"/>
+                    <field name="pay_way"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
