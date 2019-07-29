@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Clean App Menu -->
+    <menuitem id="menu_clean" name="保洁管理" />
+
+    <!-- Action to open the Area list -->
+    <act_window id="action_clean_area"
+        name="Clean Area"
+        res_model="clean.area"
+        view_mode="tree,form"
+    />
+    <!-- Menu item to open the Area list -->
+    <menuitem id="menu_clean_area"
+        name="保洁区域"
+        parent="menu_clean"
+        action="action_clean_area"
+    />
+
+    <!-- Action to open the Record list -->
+    <act_window id="action_clean_record"
+        name="Clean Record"
+        res_model="clean.record"
+        view_mode="tree,form"
+    />
+    <!-- Menu item to open the Record list -->
+    <menuitem id="menu_clean_record"
+        name="保洁记录"
+        parent="menu_clean"
+        action="action_clean_record"
+    />
+
+    <!-- Action to open the Inspection list -->
+    <act_window id="action_clean_inspection"
+        name="Clean Inspection"
+        res_model="clean.inspection"
+        view_mode="tree,form"
+    />
+    <!-- Menu item to open the Inspection list -->
+    <menuitem id="menu_clean_inspection"
+        name="保洁检查"
+        parent="menu_clean"
+        action="action_clean_inspection"
+    />
+
+    <!-- Action to open the Tool list -->
+    <act_window id="action_clean_tool"
+        name="Clean Tool"
+        res_model="clean.tool"
+        view_mode="tree,form"
+    />
+    <!-- Menu item to open the Tool list -->
+    <menuitem id="menu_clean_tool"
+        name="保洁工具管理"
+        parent="menu_clean"
+        action="action_clean_tool"
+    />
+</odoo>
