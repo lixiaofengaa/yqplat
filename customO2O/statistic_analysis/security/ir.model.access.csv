@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_census_user,CensusUser,model_statistics_census_view,statistics_group_user,1,0,0,0
-access_census_manager,CensusManager,model_statistics_census_view,statistics_group_manager,1,1,1,1
-access_waring_user,WaringUser,model_statistics_waring_view,statistics_group_user,1,0,0,0
-access_waring_manager,WaringManager,model_statistics_waring_view,statistics_group_manager,1,1,1,1
-access_analyse_user,AnalyseUser,model_statistics_analyse_view,statistics_group_user,1,0,0,0
-access_analyse_manager,AnalyseManager,model_statistics_analyse_view,statistics_group_manager,1,1,1,1
