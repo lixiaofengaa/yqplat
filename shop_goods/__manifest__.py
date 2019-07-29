@@ -11,6 +11,7 @@
     'category': 'wanguo',
     'application': True,
     'installable': True,
+    'auto_install': False,
     'data': [
         'security/shop_goods_security.xml',
         'security/ir.model.access.csv',
