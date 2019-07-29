@@ -2,7 +2,7 @@
 {
     'name': "财务管理",
     'version': '1.0.1',
-    'summary': "对入收银、财务、充值、支付进行全方位实施有效率管理",
+    'summary': "后台管理：对入收银、财务、充值、支付进行全方位实施有效率管理",
     'license': 'LGPL-3',
     'category': '万国',
     'depends': ['base'],
