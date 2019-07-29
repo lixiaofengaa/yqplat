@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="analyse_view_form_list" model="ir.ui.view">
+        <field name="name">Analyse Form</field>
+        <field name="model">statistics.analyse.view</field>
+        <field name="arch" type="xml">
+            <form string="入驻商信息">
+                <sheet>
+                    <group>
+                        <field name="analyseTitle"/>
+                        <field name="analyseType"/>
+                        <field name="analyseSummary"/>
+                        <field name="analyseUser"/>
+                        <field name="analyseTime"/>
+                        <field name="analyseWay"/>
+                        <field name="analyseEndTime"/>
+                        <field name="analyseIsTop"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="analyse_view_tree_list" model="ir.ui.view">
+        <field name="name">Analyse List</field>
+        <field name="model">statistics.analyse.view</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="analyseTitle"/>
+                <field name="analyseType"/>
+                <field name="analyseSummary"/>
+                <field name="analyseUser"/>
+                <field name="analyseTime"/>
+                <field name="analyseWay"/>
+                <field name="analyseEndTime"/>
+                <field name="analyseIsTop"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

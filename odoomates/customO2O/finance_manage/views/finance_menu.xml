@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_finance" name="财务管理"/>
+
+    <act_window id="action_finance_cash"
+                name="收银台管理" res_model="finance.cash.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_finance_cash"  name="收银台管理"  parent="menu_finance"
+              action="action_finance_cash"/>
+
+
+    <act_window id="action_finance_money"
+                name="财务管理" res_model="finance.money.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_finance_money"  name="财务管理"  parent="menu_finance"
+              action="action_finance_money"/>
+
+
+    <act_window id="action_finance_card"
+                name="会员卡管理" res_model="finance.card.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_finance_card"  name="会员卡管理"  parent="menu_finance"
+              action="action_finance_card"/>
+
+    <act_window id="action_finance_pay"
+                name="支付管理" res_model="finance.pay.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_finance_pay"  name="支付管理"  parent="menu_finance"
+              action="action_finance_pay"/>
+
+
+    <menuitem id="menu_finance_type" name="基础数据"  parent="menu_finance" />
+
+    <act_window id="action_finance_tong_gao" name="收银方式"
+                res_model="finance.card.view" view_mode="tree,form" />
+
+    <menuitem id="menu_finance_tong_gao" name="收银方式"
+        parent="menu_finance_type" action="action_finance_tong_gao" />
+
+    <act_window id="action_finance_new" name="支付方式"
+        res_model="finance.card.view" view_mode="tree,form" />
+
+    <menuitem id="menu_finance_new" name="支付方式"
+        parent="menu_finance_type" action="action_finance_new" />
+
+    <act_window id="action_finance_article" name="支付类别"
+        res_model="finance.card.view" view_mode="tree,form" />
+
+    <menuitem id="menu_finance_article" name="支付类别"
+        parent="menu_finance_type" action="action_finance_article" />
+
+</odoo>

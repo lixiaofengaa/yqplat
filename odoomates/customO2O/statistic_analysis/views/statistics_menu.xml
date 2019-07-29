@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_statistics" name="统计分析"/>
+
+
+   <!-- <act_window id="action_statistics_census"
+                name="统计管理" res_model="statistics.census.view"  view_mode="tree,form"/>-->
+
+    <menuitem id="menu_statistics_census"  name="统计管理"  parent="menu_statistics" />
+
+
+    <act_window id="action_statistics_store" name="店铺统计"
+                res_model="statistics.census.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_store" name="店铺统计"
+        parent="menu_statistics_census" action="action_statistics_store" />
+
+
+    <act_window id="action_statistics_money" name="营业额统计"
+                res_model="statistics.census.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_money" name="营业额统计"
+        parent="menu_statistics_census" action="action_statistics_money" />
+
+
+    <act_window id="action_statistics_advert" name="广告统计"
+                res_model="statistics.census.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_advert" name="广告统计"
+        parent="menu_statistics_census" action="action_statistics_advert" />
+
+
+    <act_window id="action_statistics_member" name="会员统计"
+                res_model="statistics.census.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_member" name="会员统计"
+        parent="menu_statistics_census" action="action_statistics_member" />
+
+
+
+
+    <menuitem id="menu_statistics_waring"  name="智能预警"  parent="menu_statistics" />
+
+
+    <act_window id="action_statistics_store_waring" name="到期店铺预警"
+                res_model="statistics.waring.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_store_waring" name="到期店铺预警"
+        parent="menu_statistics_waring" action="action_statistics_store_waring" />
+
+    <act_window id="action_statistics_finance_waring" name="财务预警"
+                res_model="statistics.waring.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_finance_waring" name="财务预警"
+        parent="menu_statistics_waring" action="action_statistics_finance_waring" />
+
+    <act_window id="action_statistics_money_waring" name="余额信息预警"
+                res_model="statistics.waring.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_money_waring" name="余额信息预警"
+        parent="menu_statistics_waring" action="action_statistics_money_waring" />
+
+
+
+
+ <!--   <act_window id="action_statistics_analyse"
+                name="智能分析" res_model="statistics.analyse.view"  view_mode="tree,form"/>-->
+
+    <menuitem id="menu_statistics_analyse"  name="智能分析"  parent="menu_statistics" />
+
+
+    <act_window id="action_statistics_advert_analysis" name="广告金额分析"
+                res_model="statistics.census.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_advert_analysis" name="广告金额分析"
+        parent="menu_statistics_analyse" action="action_statistics_advert_analysis" />
+
+
+    <act_window id="action_statistics_store_analysis" name="店铺金额分析"
+                res_model="statistics.census.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_store_analysis" name="店铺金额分析"
+        parent="menu_statistics_analyse" action="action_statistics_store_analysis" />
+
+
+    <act_window id="action_statistics_expect_analysis" name="预计收益分析"
+                res_model="statistics.census.view" view_mode="tree,form" />
+
+    <menuitem id="menu_statistics_expect_analysis" name="预计收益分析"
+        parent="menu_statistics_analyse" action="action_statistics_expect_analysis" />
+
+
+
+</odoo>

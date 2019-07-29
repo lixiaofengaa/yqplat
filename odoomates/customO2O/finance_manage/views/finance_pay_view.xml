@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="pay_view_form_list" model="ir.ui.view">
+        <field name="name">Pay Form</field>
+        <field name="model">finance.pay.view</field>
+        <field name="arch" type="xml">
+            <form string="会员信息">
+                <sheet>
+                    <group>
+                        <field name="payTitle"/>
+                        <field name="payType"/>
+                        <field name="paySummary"/>
+                        <field name="payUser"/>
+                        <field name="payTime"/>
+                        <field name="payWay"/>
+                        <field name="payEndTime"/>
+                        <field name="payIsTop"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="pay_view_tree_list" model="ir.ui.view">
+        <field name="name">Pay List</field>
+        <field name="model">finance.pay.view</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="payTitle"/>
+                <field name="payType"/>
+                <field name="paySummary"/>
+                <field name="payUser"/>
+                <field name="payTime"/>
+                <field name="payWay"/>
+                <field name="payEndTime"/>
+                <field name="payIsTop"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
