@@ -3,9 +3,9 @@
 {
     'name': 'WeChat',
     'version': '1.0.0',
-    'category': 'Social Network',
+    'category': '万国',
     'summary': '企业微信公众号的接入与管理',
-    'author': 'Oejia',
+    'author': '万国车世界',
     'website': 'http://www.oejia.net/',
     'application': True,
     'data': [
