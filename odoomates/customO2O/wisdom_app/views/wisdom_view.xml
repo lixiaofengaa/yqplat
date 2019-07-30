@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_wisdom_management" name="智慧社区平台"/>
+    <act_window id="action_wisdom_access" name="门禁对讲系统" res_model="wisdom.model" view_mode="tree,form"/>
+    <menuitem id="menu_wisdom_access" name="门禁对讲系统" parent="menu_wisdom_management" action="action_wisdom_access"/>
+
+    <act_window id="action_wisdom_park" name="停车场系统" res_model="wisdom.model" view_mode="tree,form"/>
+    <menuitem id="menu_wisdom_park" name="停车场系统" parent="menu_wisdom_management" action="action_wisdom_park"/>
+
+    <act_window id="action_wisdom_card" name="一卡通系统" res_model="wisdom.model" view_mode="tree,form"/>
+    <menuitem id="menu_wisdom_card" name="一卡通系统" parent="menu_wisdom_management" action="action_wisdom_card"/>
+
+    <act_window id="action_wisdom_monitor" name="监控系统" res_model="wisdom.model" view_mode="tree,form"/>
+    <menuitem id="menu_wisdom_monitor" name="监控系统" parent="menu_wisdom_management" action="action_wisdom_monitor"/>
+
+    <act_window id="action_wisdom_call" name="呼叫中心系统" res_model="wisdom.model" view_mode="tree,form"/>
+    <menuitem id="menu_wisdom_call" name="呼叫中心系统" parent="menu_wisdom_management" action="action_wisdom_call"/>
+
+    <act_window id="action_wisdom_we" name="水电系统" res_model="wisdom.model" view_mode="tree,form"/>
+    <menuitem id="menu_wisdom_we" name="水电系统" parent="menu_wisdom_management" action="action_wisdom_we"/>
+
+    <act_window id="action_wisdom_check" name="考勤机系统" res_model="wisdom.model" view_mode="tree,form"/>
+    <menuitem id="menu_wisdom_check" name="考勤机系统" parent="menu_wisdom_management" action="action_wisdom_check"/>
+
+</odoo>
