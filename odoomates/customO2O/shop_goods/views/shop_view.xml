@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_shop" model="ir.ui.view">
+        <field name="name">Shop Form</field>
+        <field name="model">shop.view</field>
+        <field name="arch" type="xml">
+            <form string="商铺">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="category"/>
+                        <field name="local"/>
+                        <field name="dmxx"/>
+                        <field name="business"/>
+                        <field name="score"/>
+                        <field name="grade"/>
+                        <field name="credibility"/>
+                        <field name="judge"/>
+                        <field name="type"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_shop" model="ir.ui.view">
+        <field name="name">Shop List</field>
+        <field name="model">shop.view</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="category"/>
+                <field name="local"/>
+                <field name="dmxx"/>
+                <field name="business"/>
+                <field name="score"/>
+                <field name="grade"/>
+                <field name="credibility"/>
+                <field name="judge"/>
+                <field name="type"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

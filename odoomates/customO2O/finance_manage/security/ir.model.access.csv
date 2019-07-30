@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_card_user,CardUser,model_finance_card_view,finance_group_user,1,0,0,0
+access_card_manager,CardManager,model_finance_card_view,finance_group_manager,1,1,1,1
+access_cash_user,CashUser,model_finance_cash_view,finance_group_user,1,0,0,0
+access_cash_manager,CashManager,model_finance_cash_view,finance_group_manager,1,1,1,1
+access_money_user,MoneyUser,model_finance_money_view,finance_group_user,1,0,0,0
+access_money_manager,MoneyManager,model_finance_money_view,finance_group_manager,1,1,1,1
+access_pay_user,PayUser,model_finance_pay_view,finance_group_user,1,0,0,0
+access_pay_manager,PayManager,model_finance_pay_view,finance_group_manager,1,1,1,1
