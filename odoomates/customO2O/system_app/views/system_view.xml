@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_system_management" name="系统设置"/>
+
+    <act_window id="action_system_structure" name="组织架构" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_structure" name="组织架构" parent="menu_system_management" action="action_system_structure"/>
+    <act_window id="action_system_authority" name="权限管理" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_authority" name="权限管理" parent="menu_system_management" action="action_system_authority"/>
+    <act_window id="action_system_task" name="任务平台" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_task" name="任务平台" parent="menu_system_management" action="action_system_task"/>
+    <act_window id="action_system_warning" name="预警平台" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_warning" name="预警平台" parent="menu_system_management" action="action_system_warning"/>
+    <act_window id="action_system_print" name="打印管理" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_print" name="打印管理" parent="menu_system_management" action="action_system_print"/>
+    <act_window id="action_system_db_backup" name="数据库备份" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_db_backup" name="数据库备份" parent="menu_system_management" action="action_system_db_backup"/>
+    <act_window id="action_system_approve" name="审批流管理" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_approve" name="审批流管理" parent="menu_system_management" action="action_system_approve"/>
+    <act_window id="action_system_outer_param" name="外部接口参数管理" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_outer_param" name="外部接口参数管理" parent="menu_system_management" action="action_system_outer_param"/>
+    <act_window id="action_system_init_import" name="系统初始化导入" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_init_import" name="系统初始化导入" parent="menu_system_management" action="action_system_init_import"/>
+    <act_window id="action_system_intelligent_analysis" name="智能分析配置" res_model="system.model" view_mode="tree,form"/>
+    <menuitem id="menu_system_intelligent_analysis" name="智能分析配置" parent="menu_system_management" action="action_system_intelligent_analysis"/>
+
+</odoo>
