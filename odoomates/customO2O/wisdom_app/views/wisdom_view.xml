@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <menuitem id="menu_wisdom_management" name="智慧社区平台"/>
+    <menuitem id="menu_wisdom_management" name="智慧社区"/>
     <act_window id="action_wisdom_access" name="门禁对讲系统" res_model="wisdom.model" view_mode="tree,form"/>
     <menuitem id="menu_wisdom_access" name="门禁对讲系统" parent="menu_wisdom_management" action="action_wisdom_access"/>
 

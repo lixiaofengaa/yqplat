@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <!-- Green App Menu -->
-    <menuitem id="menu_green" name="绿化管理" />
+    <menuitem id="menu_green" name="园区绿化" />
 
 <!--    &lt;!&ndash; 绿化管理子菜单 &ndash;&gt;-->
 <!--    <menuitem id="menu_green_manage"-->

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <!-- Clean App Menu -->
-    <menuitem id="menu_clean" name="保洁管理" />
+    <menuitem id="menu_clean" name="保洁服务" />
 
     <!-- Action to open the Area list -->
     <act_window id="action_clean_area"

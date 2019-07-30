@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <menuitem id="menu_finance" name="财务管理"/>
+    <menuitem id="menu_finance" name="收银台"/>
 
     <act_window id="action_finance_cash"
                 name="收银台管理" res_model="finance.cash.view"  view_mode="tree,form"/>

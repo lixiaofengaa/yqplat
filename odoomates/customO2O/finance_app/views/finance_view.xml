@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <menuitem id="menu_finance_management" name="财务管理平台"/>
+    <menuitem id="menu_finance_management" name="物业财务"/>
 
     <menuitem id="menu_finance_pay_manager" name="支出管理" parent="menu_finance_management"/>
         <act_window id="action_finance_bill" name="应付单据" res_model="finance.model" view_mode="tree,form"/>
