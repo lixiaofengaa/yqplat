@@ -1,5 +1,5 @@
 {
-    'name': "商铺商品管理",
+    'name': "商铺商品",
     'summary': "后台管理：商铺商品管理",
     'description': """Long description""",
     'author': "万国车世界",
