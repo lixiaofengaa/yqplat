@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_message" name="公告"/>
+
+    <act_window id="action_message_special"
+                name="信息管理" res_model="message.list.view"  view_mode="tree,form"/>
+
+    <menuitem id="menu_message_special"  name="公告信息"  parent="menu_message"
+              action="action_message_special"/>
+
+
+    <menuitem id="menu_message_type" name="公告类别"  parent="menu_message" />
+
+    <act_window id="action_message_tong_gao" name="通告信息"
+                res_model="message.list.view" view_mode="tree,form" />
+
+    <menuitem id="action_message_tong_gao" name="通告"
+        parent="menu_message_type" action="action_message_tong_gao" />
+
+    <act_window id="action_message_new" name="新闻信息"
+        res_model="message.list.view" view_mode="tree,form" />
+
+    <menuitem id="menu_message_new" name="新闻"
+        parent="menu_message_type" action="action_message_new" />
+
+    <act_window id="action_message_article" name="文章信息"
+        res_model="message.list.view" view_mode="tree,form" />
+
+    <menuitem id="menu_message_article" name="文章"
+        parent="menu_message_type" action="action_message_article" />
+
+
+</odoo>
