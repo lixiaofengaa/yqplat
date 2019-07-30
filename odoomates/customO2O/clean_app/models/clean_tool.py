@@ -9,7 +9,7 @@ class Tool(models.Model):
         [('0', '崭新'),
          ('1', '完好'),
          ('2', '破旧')],
-        string='工具损耗'
+        string='工具损耗程度'
     )
     employee = fields.Many2one(
         'res.partner',

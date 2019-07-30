@@ -3,7 +3,6 @@
     'version': '12.0.1.0',
     'license': 'LGPL-3',
     'depends': ['base'],
-    'summary': '万国odoo：负责记录车位档案信息、收费标准指定以及租赁和已售车位的管理',
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',
     'description': """Parking Management""",

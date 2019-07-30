@@ -5,7 +5,7 @@
 
     <!-- Action to open the Area list -->
     <act_window id="action_clean_area"
-        name="保洁区域"
+        name="Clean Area"
         res_model="clean.area"
         view_mode="tree,form"
     />
@@ -18,7 +18,7 @@
 
     <!-- Action to open the Record list -->
     <act_window id="action_clean_record"
-        name="清洁记录"
+        name="Clean Record"
         res_model="clean.record"
         view_mode="tree,form"
     />
@@ -31,7 +31,7 @@
 
     <!-- Action to open the Inspection list -->
     <act_window id="action_clean_inspection"
-        name="卫生检查"
+        name="Clean Inspection"
         res_model="clean.inspection"
         view_mode="tree,form"
     />
@@ -44,7 +44,7 @@
 
     <!-- Action to open the Tool list -->
     <act_window id="action_clean_tool"
-        name="工具管理"
+        name="Clean Tool"
         res_model="clean.tool"
         view_mode="tree,form"
     />

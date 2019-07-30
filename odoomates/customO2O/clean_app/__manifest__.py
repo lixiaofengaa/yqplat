@@ -2,7 +2,6 @@
     'name': '保洁管理',
     'version': '12.0.1.0',
     'license': 'LGPL-3',
-    'summary': '万国odoo：负责保洁区域划分、人员、清洁记录以及卫生检查管理',
     'depends': ['base'],
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',

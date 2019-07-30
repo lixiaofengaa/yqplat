@@ -3,7 +3,6 @@
     'version': '12.0.1.0',
     'license': 'LGPL-3',
     'depends': ['base'],
-    'summary': '万国odoo：负责园区绿化区域、植被以及绿化计划和检查管理',
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',
     'description': """Green Management""",
