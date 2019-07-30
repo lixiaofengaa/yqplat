@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_area" model="ir.ui.view">
+        <field name="name">Area Form</field>
+        <field name="model">secfico.area</field>
+        <field name="arch" type="xml">
+            <form string="Area">
+                <header>
+                    <!-- 此处添加按钮 -->
+<!--                    <button name="button_check_isbn" type="object" string="按钮" />-->
+                </header>
+                <sheet>
+                    <group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_area" model="ir.ui.view">
+        <field name="name">Area List</field>
+        <field name="model">secfico.area</field>
+        <field name="arch" type="xml">
+            <tree>
+
+            </tree>
+        </field>
+    </record>
+
+</odoo>

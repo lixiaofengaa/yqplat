@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_charges" model="ir.ui.view">
+        <field name="name">Charges Form</field>
+        <field name="model">parking.charges</field>
+        <field name="arch" type="xml">
+            <form string="Charges">
+                <header>
+                    <!-- 此处添加按钮 -->
+<!--                    <button name="button_check_isbn" type="object" string="统计车位数量" />-->
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="space" />
+                        <field name="area" />
+                        <field name="vehicel" />
+                        <field name="emissions" />
+                        <field name="manage" />
+                        <field name="rent" />
+                        <field name="deposit" />
+                        <field name="total" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_charges" model="ir.ui.view">
+        <field name="name">Charges List</field>
+        <field name="model">parking.charges</field>
+        <field name="arch" type="xml">
+<!--            <button name="action_confirm_all_sale_ordesar" string="确认" type="action" />-->
+            <tree>
+                <field name="name" />
+                <field name="space" />
+                <field name="area" />
+                <field name="vehicel" />
+                <field name="emissions" />
+                <field name="manage" />
+                <field name="rent" />
+                <field name="deposit" />
+                <field name="total" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

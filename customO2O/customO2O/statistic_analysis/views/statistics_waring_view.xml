@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="waring_view_form_list" model="ir.ui.view">
+        <field name="name">Waring Form</field>
+        <field name="model">statistics.waring.view</field>
+        <field name="arch" type="xml">
+            <form string="用户信息">
+                <sheet>
+                    <group>
+                        <field name="waringTitle"/>
+                        <field name="waringType"/>
+                        <field name="waringSummary"/>
+                        <field name="waringUser"/>
+                        <field name="waringTime"/>
+                        <field name="waringWay"/>
+                        <field name="waringEndTime"/>
+                        <field name="waringIsTop"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="waring_view_tree_list" model="ir.ui.view">
+        <field name="name">Waring List</field>
+        <field name="model">statistics.waring.view</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="waringTitle"/>
+                <field name="waringType"/>
+                <field name="waringSummary"/>
+                <field name="waringUser"/>
+                <field name="waringTime"/>
+                <field name="waringWay"/>
+                <field name="waringEndTime"/>
+                <field name="waringIsTop"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
