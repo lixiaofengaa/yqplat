@@ -1,5 +1,5 @@
 {
-    'name': "智慧社区管理",
+    'name': "智慧社区",
     'version': '12.0.1.0',
     'license': 'LGPL-3',
     'depends': ['base'],

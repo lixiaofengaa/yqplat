@@ -1,5 +1,5 @@
 {
-    'name': '安保消防管理',
+    'name': '安保消防',
     'version': '12.0.1.0',
     'license': 'LGPL-3',
     'depends': ['base'],

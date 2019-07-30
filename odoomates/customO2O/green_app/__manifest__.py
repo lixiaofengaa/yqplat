@@ -1,5 +1,5 @@
 {
-    'name': '绿化管理',
+    'name': '园区绿化',
     'version': '12.0.1.0',
     'license': 'LGPL-3',
     'depends': ['base'],
