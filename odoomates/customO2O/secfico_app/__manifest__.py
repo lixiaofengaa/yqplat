@@ -11,7 +11,7 @@
     'application': True,
     'auto_install': False,
     'data': [
-        'security/Secfico_security.xml',
+        'security/secfico_security.xml',
         'security/ir.model.access.csv',
         'views/secfico_menu.xml',
         'views/area_view.xml'
