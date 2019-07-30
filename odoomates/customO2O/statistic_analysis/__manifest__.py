@@ -2,10 +2,9 @@
 {
     'name': "统计分析",
     'version': '1.0.1',
-    'summary':"对统计管理、智能预警、智能分析进行全方位实施有效率管理",
+    'summary': "后台管理：对统计管理、智能预警、智能分析进行全方位实施有效率管理",
     'license': 'LGPL-3',
     'category': '万国',
-    'sequence':0,
     'depends': ['base'],
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',

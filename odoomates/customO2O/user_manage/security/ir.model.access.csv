@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_set_user,SetUser,model_user_set_view,user_group_user,1,0,0,0
-access_set_manager,SetManager,model_user_set_view,user_group_manager,1,1,1,1
-access_consumer_user,ConsumerUser,model_user_consumer_view,user_group_user,1,0,0,0
-access_consumer_manager,ConsumerManager,model_user_consumer_view,user_group_manager,1,1,1,1
-access_member_user,MemberUser,model_user_member_view,user_group_user,1,0,0,0
-access_member_manager,MemberManager,model_user_member_view,user_group_manager,1,1,1,1
