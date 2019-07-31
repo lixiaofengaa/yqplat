@@ -2,6 +2,7 @@
     'name': "财务管理平台",
     'version': '12.0.1.0',
     'license': 'LGPL-3',
+    'summary': '万国odoo：负责平台的收支、凭证以及财务报表管理',
     'depends': ['base'],
     'author': "万国车世界",
     'website': 'http://www.baoshunchem.com/',
