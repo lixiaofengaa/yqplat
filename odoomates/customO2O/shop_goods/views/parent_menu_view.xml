@@ -3,169 +3,283 @@
     <!-- 此处添加下面的action和menu配置 -->
     <menuitem
             id="shop_goods_menu_fu"
-            name="商铺商品"/>
+            name="店商"/>
     <act_window
             id="shop_action"
-            name="商铺" res_model="shop.view"
+            name="店铺" res_model="shop.view"
             view_mode="tree,form"/>
 
+    <!--店铺管理-->
     <menuitem
             id="shop_goods_shopmanage"
-            name="商铺管理"
+            name="店铺"
             action="shop_action"
             parent="shop_goods_menu_fu"
             sequence="5"/>
 
-    <menuitem
-            id="shop_goods_shopmanage1"
-            name="商铺审核"
-            action="shop_action"
-            parent="shop_goods_shopmanage"
-            sequence="1"/>
-    <menuitem
-            id="shop_goods_shopmanage2"
-            name="商铺等级"
-            action="shop_action"
-            parent="shop_goods_shopmanage"
-            sequence="2"/>
-
+    <!--商品管理-->
     <menuitem
             id="shop_goods_goodsmanage"
-            name="商品管理"
+            name="商品"
             parent="shop_goods_menu_fu"
             sequence="5"/>
-
     <menuitem
             id="shop_goods_goodsmanage11"
             name="出售中"
             action="shop_action"
             parent="shop_goods_goodsmanage"
             sequence="1"/>
-
     <menuitem
             id="shop_goods_goodsmanage12"
             name="已售罄"
             action="shop_action"
             parent="shop_goods_goodsmanage"
             sequence="2"/>
-
     <menuitem
             id="shop_goods_goodsmanage13"
-            name="仓库" action="shop_action"
+            name="仓库中" action="shop_action"
             parent="shop_goods_goodsmanage"
             sequence="3"/>
-
     <menuitem
             id="shop_goods_goodsmanage14"
             name="回收站"
             action="shop_action"
             parent="shop_goods_goodsmanage"
             sequence="4"/>
-
     <menuitem
             id="shop_goods_goodsmanage15"
             name="待审核"
             action="shop_action"
             parent="shop_goods_goodsmanage"
             sequence="5"/>
-
     <menuitem
-            id="shop_goods_ordermanage"
-            name="订单管理"
+            id="shop_goods_goodsmanage16"
+            name="商品套餐"
+            action="shop_action"
+            parent="shop_goods_goodsmanage"
+            sequence="6"/>
+    <menuitem
+            id="shop_goods_goodsmanage17"
+            name="全部商品"
+            action="shop_action"
+            parent="shop_goods_goodsmanage"
+            sequence="7"/>
+
+    <!--服务-->
+    <menuitem
+            id="shop_goods_service"
+            name="服务"
             action="shop_action"
             parent="shop_goods_menu_fu"
             sequence="5"/>
 
+    <!--订单管理-->
     <menuitem
-            id="shop_goods_ordermanage1"
-            name="待付款"
-            action="shop_action"
-            parent="shop_goods_ordermanage"
-            sequence="1"/>
-
+            id="shop_goods_ordermanage"
+            name="订单"
+            parent="shop_goods_menu_fu"
+            sequence="5"/>
     <menuitem
-            id="shop_goods_ordermanage2"
-            name="待发货"
-            action="shop_action"
-            parent="shop_goods_ordermanage"
-            sequence="2"/>
-
-    <menuitem
-            id="shop_goods_ordermanage3"
-            name="待收货"
-            action="shop_action"
-            parent="shop_goods_ordermanage"
-            sequence="3"/>
-
-    <menuitem
-            id="shop_goods_ordermanage4"
-            name="已完成"
-            action="shop_action"
-            parent="shop_goods_ordermanage"
-            sequence="4"/>
-
-    <menuitem
-            id="shop_goods_ordermanage5"
-            name="已关闭"
-            action="shop_action"
+            id="shop_goods_goodsorder"
+            name="商品订单"
             parent="shop_goods_ordermanage"
             sequence="5"/>
-
     <menuitem
-            id="shop_goods_ordermanage6"
+            id="shop_goods_goodsorder1"
+            name="待付款"
+            action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="1"/>
+    <menuitem
+            id="shop_goods_goodsorder2"
+            name="待发货"
+            action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="2"/>
+    <menuitem
+            id="shop_goods_goodsorder3"
+            name="待收货"
+            action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="3"/>
+    <menuitem
+            id="shop_goods_goodsorder4"
+            name="待评价"
+            action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="4"/>
+    <menuitem
+            id="shop_goods_goodsorder5"
+            name="已完成"
+            action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="5"/>
+    <menuitem
+            id="shop_goods_goodsorder6"
+            name="已关闭"
+            action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="6"/>
+    <menuitem
+            id="shop_goods_goodsorder7"
+            name="退款/售后"
+            action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="7"/>
+    <menuitem
+            id="shop_goods_goodsorder8"
             name="全部订单"
             action="shop_action"
+            parent="shop_goods_goodsorder"
+            sequence="8"/>
+
+    <menuitem
+            id="shop_goods_serviceorder"
+            name="服务订单"
             parent="shop_goods_ordermanage"
+            sequence="5"/>
+    <menuitem
+            id="shop_goods_serviceorder1"
+            name="待付款"
+            action="shop_action"
+            parent="shop_goods_serviceorder"
+            sequence="1"/>
+    <menuitem
+            id="shop_goods_serviceorder2"
+            name="待确认"
+            action="shop_action"
+            parent="shop_goods_serviceorder"
+            sequence="2"/>
+    <menuitem
+            id="shop_goods_serviceorder3"
+            name="已预约"
+            action="shop_action"
+            parent="shop_goods_serviceorder"
+            sequence="3"/>
+    <menuitem
+            id="shop_goods_serviceorder4"
+            name="待核销"
+            action="shop_action"
+            parent="shop_goods_serviceorder"
+            sequence="4"/>
+    <menuitem
+            id="shop_goods_serviceorder5"
+            name="已核销"
+            action="shop_action"
+            parent="shop_goods_serviceorder"
+            sequence="5"/>
+    <menuitem
+            id="shop_goods_serviceorder6"
+            name="退款/售后"
+            action="shop_action"
+            parent="shop_goods_serviceorder"
             sequence="6"/>
 
+    <!--养修-->
+    <menuitem
+            id="shop_goods_maintenance"
+            name="养修"
+            parent="shop_goods_menu_fu"
+            sequence="5"/>
+    <menuitem
+            id="shop_goods_maintenance1"
+            name="接车记录"
+            action="shop_action"
+            parent="shop_goods_maintenance"
+            sequence="1"/>
+    <menuitem
+            id="shop_goods_maintenance2"
+            name="养修记录"
+            action="shop_action"
+            parent="shop_goods_maintenance"
+            sequence="2"/>
 
+    <!--车辆档案-->
+    <menuitem
+            id="shop_goods_carmanage"
+            name="车辆档案"
+            action="shop_action"
+            parent="shop_goods_menu_fu"
+            sequence="5"/>
+
+    <!--基础数据-->
     <menuitem
             id="shop_goods_datamanage"
             name="基础数据"
             parent="shop_goods_menu_fu"
             sequence="5"/>
-
     <menuitem
             id="shop_goods_datamanage1"
-            name="商铺类别"
+            name="店铺类别"
             action="shop_action"
             parent="shop_goods_datamanage"
             sequence="1"/>
-
     <menuitem
             id="shop_goods_datamanage2"
-            name="商铺类型"
+            name="店铺等级"
             action="shop_action"
             parent="shop_goods_datamanage"
             sequence="2"/>
-
     <menuitem
             id="shop_goods_datamanage3"
             name="商品分类"
             action="shop_action"
             parent="shop_goods_datamanage"
             sequence="3"/>
-
     <menuitem
             id="shop_goods_datamanage4"
-            name="物流方式"
+            name="商品品牌"
             action="shop_action"
             parent="shop_goods_datamanage"
             sequence="4"/>
-
     <menuitem
             id="shop_goods_datamanage5"
-            name="订单状态"
+            name="服务分类"
             action="shop_action"
             parent="shop_goods_datamanage"
             sequence="5"/>
-
     <menuitem
             id="shop_goods_datamanage6"
-            name="物流方式"
+            name="车型"
             action="shop_action"
             parent="shop_goods_datamanage"
             sequence="6"/>
 
+    <menuitem
+            id="shop_goods_clpp"
+            name="车辆品牌"
+            action="shop_action"
+            parent="shop_goods_datamanage6"
+            sequence="1"/>
+    <menuitem
+            id="shop_goods_clxh"
+            name="型号"
+            action="shop_action"
+            parent="shop_goods_datamanage6"
+            sequence="2"/>
+    <menuitem
+            id="shop_goods_pfl"
+            name="排放量"
+            action="shop_action"
+            parent="shop_goods_datamanage6"
+            sequence="3"/>
+    <menuitem
+            id="shop_goods_scnf"
+            name="生产年份"
+            action="shop_action"
+            parent="shop_goods_datamanage6"
+            sequence="4"/>
+    <menuitem
+            id="shop_goods_datamanage7"
+            name="订单状态"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="7"/>
+    <menuitem
+            id="shop_goods_datamanage8"
+            name="物流方式"
+            action="shop_action"
+            parent="shop_goods_datamanage"
+            sequence="8"/>
 
 </openerp>
